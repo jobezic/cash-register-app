@@ -31,3 +31,23 @@ All these rules can be expressed with two basic rules:
 
 ## Language
 The language I choose is Ruby because it allows rapid development and takes quickly into an MVP.
+
+## Build and run with Docker
+
+```
+docker build -t cash-register-app .
+docker run --rm -it cash-register-app
+```
+
+## Usage with CLI
+
+Once running, the CLI will show the available products and is waiting for input.
+The user can introduce the code of the product that he wants to add to the shopping cart.
+Once he pressed enter, the new shopping cart total will be shown.
+Is it possible to exit from the app by typing "EXIT".
+
+## Run specs
+
+```
+docker run --rm cash-register-app rspec
+```
