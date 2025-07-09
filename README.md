@@ -51,3 +51,19 @@ Is it possible to exit from the app by typing "EXIT".
 ```
 docker run --rm cash-register-app rspec
 ```
+
+## Further developments
+
+### App
+
+- add an outbound port and adapter to load rules (and not having them hard coded)
+- decouple the Checkout from CLI
+
+### Specs
+
+- use fixtures instead of instantiating products on specs
+- add more specs
+
+### CI/CD
+
+- add pipelines to check code (running rubocop and specs)
